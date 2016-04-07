@@ -1,2 +1,2 @@
 # phils-xmonad-stuff
-Personal xmonad settings
+My personal xmonad settings, meant for Xubuntu
