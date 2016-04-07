@@ -11,9 +11,13 @@ stalonetray &
 
 xscreensaver -no-splash &
 
+if [ -x /usr/bin/xfce4-power-manager ] ; then
 xfce4-power-manager &
+fi
 
+if [ -x /usr/bin/unclutter ]; then
 unclutter -idle 2 &
+fi
 
 if [ -x /usr/bin/nm-applet ] ; then
    nm-applet --sm-disable &
