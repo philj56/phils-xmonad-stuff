@@ -1,2 +1,2 @@
 sudo apt-get update
-sudo apt-get install xmonad stalonetray unclutter
+sudo apt-get install xmonad stalonetray unclutter fonts-croscore
