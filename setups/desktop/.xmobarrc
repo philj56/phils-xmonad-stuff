@@ -6,7 +6,7 @@ Config { font = "xft:Cousine:bold:antialias=true:size=9,-*-Fixed-Bold-R-Normal-*
         , fgColor = "grey"
         , position = Static { xpos = 0, ypos = 0, width =1920, height = 16 } --TopW L 100
         , commands = [ Run Weather "EGNV" ["-t","<tempC>C","-L","18","-H","25","--normal","green","--high","red","--low","lightblue"] 36000
-                        , Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
+                        , Run Network "enp5s0" ["-L","0","-H","1048576","--normal","green","--high","red"] 10
                         , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                         , Run Memory ["-t","Mem: <usedratio>%"] 10
                         , Run Swap [] 10
@@ -16,5 +16,5 @@ Config { font = "xft:Cousine:bold:antialias=true:size=9,-*-Fixed-Bold-R-Normal-*
                         ]
         , sepChar = "%"
         , alignSep = "}{"
-        , template = "%StdinReader% | %cpu% | %memory% * %swap% | %network% }{<fc=#ee9a00>%date%</fc> | %uname% | %EGNV% "
+        , template = "%StdinReader% | %cpu% | %memory% * %swap% | %enp5s0% }{<fc=#ee9a00>%date%</fc> | %uname% | %EGNV% "
         }
