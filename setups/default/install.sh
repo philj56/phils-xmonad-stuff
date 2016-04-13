@@ -23,7 +23,7 @@ files=(  \
       )
 
 # Prompt for confirmation
-echo -n "This will overwrite your current config. Are you sure? [yes/NO]?"
+echo -n "This will overwrite your current config. Are you sure? [yes/NO]? "
 
 while true;
 do
