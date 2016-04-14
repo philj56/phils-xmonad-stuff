@@ -20,9 +20,5 @@ if [ "$DESKTOP_SESSION" == "xmonad" ]; then
 		xfce4-power-manager &	
 	fi
 	
-	if [ -x /usr/bin/unclutter ]; then
-		unclutter -idle 2 &
-	fi
-	
 	exec xmonad
 fi
